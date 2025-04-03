@@ -7,7 +7,7 @@ group = "com.github.moln-r"
 version = "1.0"
 
 application {
-    mainClass.set("com.github.molnr.MainKt")
+    mainClass.set("com.github.molnr.GameKt")
 }
 
 repositories {
