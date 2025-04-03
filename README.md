@@ -33,8 +33,8 @@ brew install gradle
 You can run the application with or without an input file.
 
 ```bash
-# Run the project with an input file
-./gradlew run --args="deck-of-cards"
+# Run the project with an input file (see other example files in the /resources/input directory)
+./gradlew run --args="both-blackjack"
 ```
 
 If you don't provide an input file, a random deck will be generated.
@@ -42,4 +42,18 @@ If you don't provide an input file, a random deck will be generated.
 ```bash
 # Run the project with a generated random deck
 ./gradlew run
+```
+
+### How to test
+
+```bash
+# Run tests
+./gradlew clean build test
+```
+
+You can find the test report in `build/reports/tests/test/index.html`.
+
+```bash
+# Run tests with console output
+./gradlew clean build test --info
 ```
